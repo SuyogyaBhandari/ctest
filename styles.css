@@ -1,0 +1,352 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff4c4c;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: rgb(66, 46, 22);
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    font-size: 20px;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+  }
+  
+  /* Hover effect for "Home" and "About Us" */
+  header nav ul li:nth-child(1) a:hover, /* "Home" link */
+  header nav ul li:nth-child(2) a:hover,
+  nav ul li:nth-child(4) a:hover,
+  nav ul li:nth-child(5) a:hover { /* "About Us" link */
+    background-color: #ff4c4c; /* Change to your desired hover color */
+    color: white; /* Optional: Change text color when hovering */
+    border-radius: 15px;
+  }
+    /* Logo Section */
+    .logo {
+    display:flex;
+    align-items: center;
+    gap: 10px; /* Adjust the spacing between image and text */
+    position:relative;
+}
+  
+  .logo img {
+    max-width: 50px;  /* Adjust to the size you want */
+    height: auto;     /* Maintain aspect ratio */
+    border-radius: 15px;
+}
+  
+  .logo h2 {
+    font-size: 18px;  /* Adjust font size as needed */
+    margin: 0;
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    background: url('construction.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .dropbtn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover {
+    background-color: #ff4c4c;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Header Dropdown Styles */
+  header .dropdown {
+    position: relative;
+  }
+  
+  header .dropbtn {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  header .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  header .dropdown-content a:hover {
+    background-color: red;
+  }
+  
+  /* Show the dropdown menu on hover */
+  header .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Services Section */
+  .services {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .service-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+  }
+  
+  /* Projects Section */
+  .projects {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .project-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-item {
+    width: 30%;
+    min-width: 250px;
+  }
+  
+  .project-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .project-item p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .contact form button {
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact form button:hover {
+    background-color: #ff4c4c;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
